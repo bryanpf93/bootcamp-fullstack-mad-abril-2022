@@ -1,0 +1,7 @@
+
+.all-cards {
+    margin-left: 100px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}

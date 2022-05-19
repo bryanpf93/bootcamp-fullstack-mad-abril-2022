@@ -1,0 +1,32 @@
+/* header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DC3544;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFC10A;
+}
+
+.input-search {
+    width: 150px;
+    height: 20px;
+} */
+
+.buttons {
+    margin: 50px 0;
+    text-align: center;
+
+}
+
+.type {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #0D6EFE;
+    color: white;
+}
+
+.type-input:checked + .type {
+    background-color: black;
+}

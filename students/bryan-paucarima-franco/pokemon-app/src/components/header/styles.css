@@ -1,0 +1,31 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #DC3544;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+.logo {
+    color: #FFC10A;
+    text-decoration: none;
+    
+}
+
+.input-suscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-search {
+    width: 150px;
+    height: 20px;
+}
+
+.suscribe {
+    margin-left: 10px;
+}

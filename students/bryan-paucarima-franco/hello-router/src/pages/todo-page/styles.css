@@ -1,0 +1,15 @@
+.todo_description {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.todo-container {
+    display: flex;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+}
