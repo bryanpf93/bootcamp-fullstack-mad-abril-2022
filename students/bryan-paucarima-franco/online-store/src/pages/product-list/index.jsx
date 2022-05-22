@@ -12,7 +12,7 @@ function ProductList () {
         .then(p => setProductList(p))
     },[])
 
-    console.log(productList)
+    // console.log(productList)
     return(
         <>  
             <section className='all-products'>

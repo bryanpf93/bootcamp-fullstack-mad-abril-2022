@@ -1,14 +1,21 @@
 import './styles.css'
 import {useContext} from 'react'
 import { BagContext } from '../../components/bag/bag.context';
-
-
+ 
 function Product ({product}) {
-    const [,setBag] = useContext(BagContext)
+    const [bag,setBag] = useContext(BagContext)
 
+    const getProductInBag = () => {
+        const products = bag.filter(p => p.id === product.id)
+        return products.length
+    }
 
     const handleAddProduct = () => {
-        setBag(prevProduct => [...prevProduct,product])
+        setBag(prevProduct => {
+            const products = [...prevProduct,product]
+            localStorage.setItem('bagProducts', JSON.stringify(products))
+            return products
+        })
     }
 
     return(
@@ -25,7 +32,7 @@ function Product ({product}) {
             </div>
             <div className="descrip-add">
                 <p>{product.description}</p>
-                <p>QTY     1</p>
+                <p>QTY     {getProductInBag()}</p>
                 <button onClick={handleAddProduct} className="button-add">+  ADD TO BAG</button>
                 
             </div>

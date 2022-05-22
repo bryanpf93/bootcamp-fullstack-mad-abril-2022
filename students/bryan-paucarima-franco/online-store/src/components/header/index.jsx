@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 function Header (){
     const navigate = useNavigate()
     const [bag] = useContext(BagContext)
+
     return(
         <header>
             <h1>STORE</h1>

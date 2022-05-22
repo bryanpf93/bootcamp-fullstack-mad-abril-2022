@@ -1,0 +1,11 @@
+.light {
+  --background-color: red;
+}
+
+.dark {
+  --background-color: green;
+}
+
+.App {
+  background-color: var(--background-color);
+}

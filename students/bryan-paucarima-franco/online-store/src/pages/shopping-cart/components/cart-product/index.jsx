@@ -1,18 +1,18 @@
 import './styles.css'
 
-function CartProduct() {
+function CartProduct({ product, amount, onPlus, onMinus, onRemove }) {
     return (
         <div className="product-cart">
             <img src="" alt="" />
-            <h1>name</h1>
+            <h1>{product.title}</h1>
             <div className='buttons'>
-                <button>+</button>
-                <nav>2</nav>
-                <button>-</button>
+                <button onClick={onPlus}>+</button>
+                <nav>{amount}</nav>
+                <button onClick={onMinus}>-</button>
             </div>
             <div>
-                <p>$ precio</p>
-                <p>Remove</p>
+                <p>$ {product.price * amount}</p>
+                <button onClick={onRemove}>Remove</button>
             </div>
         </div>
     )

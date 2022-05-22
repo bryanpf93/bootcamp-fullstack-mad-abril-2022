@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<PokeList>Hola desde el Home</PokeList>} />
-          <Route path='pokemons' element={<PokeList></PokeList>}></Route>
-          <Route path='pokemons/:name' element={<PokemonDetails></PokemonDetails>}></Route>
-          <Route path='pokemons/:name/:info' element={<PokemonInfo></PokemonInfo>}></Route>
-          <Route path='contact' element={<Contact></Contact>}></Route>
+          <Route path='/pokemons' element={<PokeList></PokeList>}></Route>
+          <Route path='/pokemons/:name' element={<PokemonDetails></PokemonDetails>}></Route>
+          <Route path='/pokemons/:name/:info' element={<PokemonInfo></PokemonInfo>}></Route>
+          <Route path='/contact' element={<Contact></Contact>}></Route>
           <Route path="*" element={<NotFound></NotFound>}/>
         </Routes>
 
